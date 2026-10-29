@@ -1,0 +1,37 @@
+======================================================================
+INFORMATION RETRIEVAL CLA2: SMS SPAM DATASET SUMMARY & AUDIT
+======================================================================
+
+Dataset Filename         : SMSSpamCollection
+File Path                : C:\IR\TASK 2\data\SMSSpamCollection
+Encoding Used            : utf-8
+Total Lines Processed    : 5574
+Valid Rows Parsed        : 5574
+Skipped / Malformed Rows : 0
+Missing Values (label)   : 0
+Missing Values (message) : 0
+
+----------------------------------------------------------------------
+CLASS DISTRIBUTION (INITIAL VALID DATASET):
+  - HAM   :  4827 records ( 86.60%)
+  - SPAM  :   747 records ( 13.40%)
+----------------------------------------------------------------------
+DUPLICATE ANALYSIS & DATA LEAKAGE MITIGATION STRATEGY:
+Total Duplicate Messages : 414
+Deduplication Applied    : YES (Removed exact duplicate messages)
+Original Row Count       : 5574
+Rows Retained for Study  : 5160
+Rows Discarded           : 414
+
+RATIONALE:
+In text classification, identical messages (e.g. repetitive broadcast spam or
+common greetings like 'Sorry, I'll call later') appearing in both training
+and testing partitions cause severe data leakage and artificially inflate test
+performance, rewarding memorization rather than generalized feature learning.
+Discarding duplicates ensures that the held-out test set strictly measures
+unseen text generalization.
+----------------------------------------------------------------------
+FINAL CLEAN CLASS DISTRIBUTION:
+  - HAM   :  4518 records ( 87.56%)
+  - SPAM  :   642 records ( 12.44%)
+======================================================================

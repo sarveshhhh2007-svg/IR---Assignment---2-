@@ -1,0 +1,6 @@
+Sample_ID,Original_Message,Extracted_TFIDF_Key_Features
+1,"I got arrested for possession at, I shit you not,  &lt;TIME&gt;  pm",got arrested (0.358); gt pm (0.358); arrested (0.346); possession (0.346); lt time (0.328); time gt (0.328); pm (0.298); shit (0.258)
+2,I am going to sleep. I am tired of travel.,travel (0.530); going sleep (0.498); tired (0.476); sleep (0.391); going (0.304)
+3,"For your chance to WIN a FREE Bluetooth Headset then simply reply back with ""ADP""",free bluetooth (0.402); win free (0.391); bluetooth (0.382); simply (0.382); chance win (0.347); chance (0.305); win (0.275); reply (0.242)
+4,"Cool, text me when you head out",cool text (0.629); head (0.515); cool (0.462); text (0.355)
+5,"Ill call u 2mrw at ninish, with my address that icky American freek wont stop callin me 2 bad Jen k eh?",callin (0.380); american (0.367); jen (0.367); 2mrw (0.348); eh (0.320); address (0.300); bad (0.277); wont (0.277)

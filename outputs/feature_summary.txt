@@ -1,0 +1,49 @@
+======================================================================
+INFORMATION RETRIEVAL CLA2: TF-IDF FEATURE EXTRACTION AUDIT
+======================================================================
+
+Vectorization Algorithm       : Scikit-Learn TfidfVectorizer
+Lowercasing                   : Enabled (converts all characters to lowercase)
+Tokenization & Normalization  : Default scikit-learn regex word boundary tokenization
+Stop Words Removed            : Standard English stop words
+N-Gram Range                  : (1, 2) (Unigrams + Bigrams)
+Minimum Document Frequency    : 2 (terms appearing in < 2 documents pruned)
+Maximum Vocabulary Dimension  : 5000
+Sublinear TF Scaling          : True (replaces tf with 1 + log(tf))
+Training Documents (Rows)     : 4128
+Testing Documents (Rows)      : 1032
+Learned Vocabulary Size       : 5000 distinct features
+Training Matrix Shape         : (4128, 5000)
+Testing Matrix Shape          : (1032, 5000)
+Matrix Sparsity (Train)       : 99.84%
+
+----------------------------------------------------------------------
+SAMPLE LEARNED UNIGRAMS:
+00, 00 sub, 000, 000 bonus, 000 cash, 000 xmas, 02, 02 06, 02 09, 0207, 03, 03 05, 03 2nd, 03 final, 04, 05, 050703, 050703 csbcm4235wc1n3xx, 0578, 06
+
+SAMPLE LEARNED BIGRAMS (COLLOCATIONS):
+00 sub, 000 bonus, 000 cash, 000 xmas, 02 06, 02 09, 03 05, 03 2nd, 03 final, 050703 csbcm4235wc1n3xx, 06 03, 0800 542, 08000839402 call2optout, 08001950382 call2optout, 0870 national
+
+----------------------------------------------------------------------
+MATHEMATICAL CONCEPT & RELEVANCE TO INFORMATION RETRIEVAL:
+TF-IDF (Term Frequency - Inverse Document Frequency) is a foundational weighting
+scheme in Information Retrieval. It transforms variable-length unstructured text
+into fixed-dimensional numerical vectors in the Vector Space Model (VSM).
+
+1. Term Frequency (TF):
+   Quantifies how frequently a term occurs inside a single SMS message.
+   With sublinear TF scaling (1 + log(tf)), diminishing returns are applied so
+   that an SMS containing 10 repetitions of 'free' does not carry 10 times the weight
+   of a single occurrence.
+
+2. Inverse Document Frequency (IDF):
+   IDF = log((1 + N) / (1 + df)) + 1, where N is the total number of documents
+   and df is the document frequency of the term.
+   Terms ubiquitous across almost all messages (e.g., 'call', 'today', 'just') receive
+   low IDF scores, while discriminative terms concentrated primarily in spam
+   (e.g., 'claim', 'urgent', 'winner', 'txt') receive high IDF scores.
+
+3. L2 Normalization:
+   Each document vector is normalized to unit length Euclidean norm (||v|| = 1),
+   mitigating bias caused by variations in message length.
+======================================================================

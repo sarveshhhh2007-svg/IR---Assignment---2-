@@ -1,0 +1,14 @@
+Classification Report: Multinomial Naive Bayes
+============================================================
+              precision    recall  f1-score   support
+
+         ham     0.9658    1.0000    0.9826       904
+        spam     1.0000    0.7500    0.8571       128
+
+    accuracy                         0.9690      1032
+   macro avg     0.9829    0.8750    0.9199      1032
+weighted avg     0.9701    0.9690    0.9670      1032
+
+============================================================
+Training Time   : 0.0070 seconds
+Prediction Time : 0.0002 seconds

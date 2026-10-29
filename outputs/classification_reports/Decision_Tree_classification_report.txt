@@ -1,0 +1,14 @@
+Classification Report: Decision Tree
+============================================================
+              precision    recall  f1-score   support
+
+         ham     0.9789    0.9735    0.9762       904
+        spam     0.8195    0.8516    0.8352       128
+
+    accuracy                         0.9583      1032
+   macro avg     0.8992    0.9125    0.9057      1032
+weighted avg     0.9591    0.9583    0.9587      1032
+
+============================================================
+Training Time   : 0.2534 seconds
+Prediction Time : 0.0006 seconds

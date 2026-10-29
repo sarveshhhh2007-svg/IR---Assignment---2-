@@ -1,0 +1,14 @@
+Classification Report: Support Vector Machine
+============================================================
+              precision    recall  f1-score   support
+
+         ham     0.9879    0.9934    0.9906       904
+        spam     0.9512    0.9141    0.9323       128
+
+    accuracy                         0.9835      1032
+   macro avg     0.9696    0.9537    0.9614      1032
+weighted avg     0.9833    0.9835    0.9834      1032
+
+============================================================
+Training Time   : 0.0150 seconds
+Prediction Time : 0.0003 seconds
