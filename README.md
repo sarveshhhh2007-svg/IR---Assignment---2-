@@ -7,9 +7,23 @@
 [![Status](https://img.shields.io/badge/Status-Completed%20%26%20Benchmarked-success.svg)](#)
 
 > **Course:** Information Retrieval (IR) CLA2 — Task 2  
+> **Team Members / Submitted By:**  
+> - **Sarvesh HS** (Reg. No: `RA2411026050213`)  
+> - **Rushdham Malik CK** (Reg. No: `RA2411026050221`)  
 > **Topic:** Empirical Text Classification, Vector Space Modeling, and Hyperparameter Sensitivity Analysis  
 > **Dataset:** Genuine [UCI SMS Spam Collection Repository](https://archive.ics.uci.edu/dataset/228/sms+spam+collection) (5,574 authentic SMS records)  
 > **Target Audience:** Course Mentor, Evaluator, and Peer Researchers  
+
+---
+
+## 👥 Student Team Details
+
+| Student Name | Registration Number | Academic Contribution / Focus |
+| :--- | :---: | :--- |
+| **Sarvesh HS** | `RA2411026050213` | Model Training, TF-IDF Vector Space Pipeline, Metric Evaluation & Benchmarking |
+| **Rushdham Malik CK** | `RA2411026050221` | Data Audit, Deduplication & Leakage Prevention, Hyperparameter Tuning & Documentation |
+
+> 📌 **Group Project Notice:** This assignment was jointly researched, implemented, and submitted as a collaborative two-member team effort by **Sarvesh HS** and **Rushdham Malik CK** for the Information Retrieval (IR) CLA2 Task 2 coursework.
 
 ---
 
@@ -17,7 +31,7 @@
 
 Dear Mentor,
 
-Welcome to the **Information Retrieval (IR) Task 2** repository! This project presents an end-to-end, reproducible research pipeline evaluating text classification models for SMS spam detection in high-dimensional Vector Space Models (VSM).
+Welcome to the **Information Retrieval (IR) Task 2** repository! This project was collaboratively developed by **Sarvesh HS (RA2411026050213)** and **Rushdham Malik CK (RA2411026050221)**. It presents an end-to-end, reproducible research pipeline evaluating text classification models for SMS spam detection in high-dimensional Vector Space Models (VSM).
 
 ### 🎯 Key Highlights at a Glance
 - **Zero Synthetic Data / Leakage Prevention:** Ingests genuine UCI SMS records; identifies **414 duplicate messages** and applies pre-split deduplication to prevent test memorization leakage.

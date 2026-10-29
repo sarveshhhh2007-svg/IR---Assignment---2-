@@ -2,8 +2,10 @@
 Information Retrieval CLA2 - Task 2: SMS Spam Detection
 Using TF-IDF and Comparative Text Classification
 
-Author: Student / Engineering Candidate
-Course: Information Retrieval (IR) CLA2
+Authors / Team Members:
+    - Sarvesh HS (RA2411026050213)
+    - Rushdham Malik CK (RA2411026050221)
+Course: Information Retrieval (IR) CLA2 - Task 2
 Description:
     This script implements an end-to-end SMS Spam Detection pipeline:
     1. Dataset ingestion, encoding verification, validation, and deduplication.
